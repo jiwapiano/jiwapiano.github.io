@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ji·wa · Rumah Kursus Piano</title>
+<script>
+// Alamat aplikasi (Apps Script). Ganti di sini kalau suatu saat linknya berubah.
+var APP = 'https://script.google.com/macros/s/AKfycbyzZjuZ5aERmiklMgtv4OMMQbhutFj7Q96vUKnO868YuIMvcTnVXIz2_AarruMfRnf3/exec';
+var kode = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase().replace(/[^a-z0-9-]/g, '');
+var tujuan = kode ? APP + '?p=' + kode : APP;
+location.replace(tujuan);
+</script>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:16px;box-sizing:border-box;
+font:600 17px system-ui,sans-serif;background:linear-gradient(160deg,#ffe4e1,#ffc4bf);color:#a81f2b;text-align:center}
+a{color:#a81f2b}
+</style>
+</head>
+<body>
+<p>🎹 Membuka ji·wa…<br><small><a id="go" href="#">Ketuk di sini kalau tidak terbuka</a></small></p>
+<script>document.getElementById('go').href = tujuan;</script>
+</body>
+</html>
